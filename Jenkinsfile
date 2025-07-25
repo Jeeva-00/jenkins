@@ -26,7 +26,7 @@ pipeline {
     }  
     stage('monitoring'){
       steps{
-        echo 'monitoring the code........'
+        echo 'monitoring the code.........'
       }
     }      
 
