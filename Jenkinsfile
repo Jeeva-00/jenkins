@@ -19,16 +19,24 @@ pipeline {
       }
     }
 
-    stage('sending notification'){
-      steps{
+    stage('sending notification') {
+      steps {
         echo 'notification sent........'
       }
-    }  
-    stage('monitoring'){
-      steps{
+    }
+
+    stage('monitoring') {
+      steps {
         echo 'monitoring the code by jk-v1 .........'
       }
-    }      
+    }
+
+    stage('test1') {
+      steps {
+        sh '''date
+'''
+      }
+    }
 
   }
 }
