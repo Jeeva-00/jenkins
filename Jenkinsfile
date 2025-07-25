@@ -21,7 +21,7 @@ pipeline {
 
     stage('sending notification'){
       steps{
-        echo 'notification sent...'
+        echo 'notification sent........'
       }
     }  
 
