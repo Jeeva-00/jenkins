@@ -19,5 +19,11 @@ pipeline {
       }
     }
 
+    stage('sending notification'){
+      steps{
+        echo 'notification sent...'
+      }
+    }  
+
   }
 }
