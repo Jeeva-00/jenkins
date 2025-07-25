@@ -24,6 +24,11 @@ pipeline {
         echo 'notification sent........'
       }
     }  
+    stage('monitoring'){
+      steps{
+        echo 'monitoring the code........'
+      }
+    }      
 
   }
 }
