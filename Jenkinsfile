@@ -27,7 +27,7 @@ pipeline {
 
     stage('monitoring') {
       steps {
-        echo 'monitoring the code by jk-v1 .........'
+        echo 'monitoring the code by jk-v10 .........'
       }
     }
 
