@@ -1,2 +1,90 @@
-hi
-hello,jk
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bright Colors & Fun</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    body {
+      margin: 0; padding: 0;
+      min-height: 100vh;
+      background: radial-gradient(circle at 30% 30%, #9be15d 0%, #00e3ae 50%, #008cff 100%);
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Montserrat', Arial, sans-serif;
+    }
+    .center-card {
+      background: rgba(255,255,255,0.95);
+      border-radius: 30px;
+      box-shadow: 0 12px 40px rgba(0,0,0,0.22), 0 1px 3px rgba(0,0,0,0.12);
+      padding: 40px 60px;
+      text-align: center;
+      z-index: 1;
+      position: relative;
+    }
+    .center-card h1 {
+      font-size: 2.5em;
+      margin: 0 0 18px;
+      background: linear-gradient(90deg, #fd5e53, #fcae1e);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      letter-spacing: 2px;
+    }
+    .center-card p {
+      font-size: 1.2em;
+      color: #3a539b;
+      margin-bottom: 28px;
+    }
+    .fun-btn {
+      background: linear-gradient(90deg, #11998e, #38ef7d);
+      color: white;
+      padding: 14px 32px;
+      font-size: 1.05em;
+      border: none;
+      border-radius: 100px;
+      cursor: pointer;
+      text-decoration: none;
+      letter-spacing: 1px;
+      box-shadow: 0 4px 16px rgba(56, 239, 125,0.12);
+      transition: box-shadow 0.2s, background 0.2s;
+    }
+    .fun-btn:hover {
+      background: linear-gradient(90deg, #43cea2, #185a9d);
+      box-shadow: 0 6px 24px rgba(56,239,125,0.21);
+    }
+    /* Animated shapes */
+    .shape {
+      position: absolute;
+      opacity: 0.24;
+      border-radius: 50%;
+      animation: bounce 6s infinite alternate;
+    }
+    .shape1 { width: 120px; height: 120px; background: #fbb034; top: 6%; left: 13%; animation-delay: 0s;}
+    .shape2 { width: 80px;  height: 80px;  background: #25dad7; top: 65%; left: 18%; animation-delay: 2s;}
+    .shape3 { width: 150px; height: 150px; background: #ff61a6; top: 22%; right: 10%; animation-delay: 1s;}
+    .shape4 { width: 60px;  height: 60px;  background: #4ab3ff; bottom: 14%; right: 23%; animation-delay: 2.5s;}
+    @keyframes bounce {
+      to { transform: translateY(40px) scale(1.06);}
+    }
+    @media (max-width: 600px) {
+      .center-card { padding: 24px 10px; border-radius: 14px;}
+      .center-card h1 { font-size: 1.4em; }
+      .shape1, .shape2, .shape3, .shape4 { display: none; }
+    }
+  </style>
+</head>
+<body>
+  <div class="shape shape1"></div>
+  <div class="shape shape2"></div>
+  <div class="shape shape3"></div>
+  <div class="shape shape4"></div>
+  <div class="center-card">
+    <h1>Colorful Magic 🎉</h1>
+    <p>This page is bursting with colors, energy, and dynamic shapes.<br/>
+    Enjoy the playful vibes and bring brightness to your day!</p>
+    <a href="#" class="fun-btn">Celebrate Color</a>
+  </div>
+</body>
+</html>
